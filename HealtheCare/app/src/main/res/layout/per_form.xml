@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_editor_absoluteX="1dp"
+    app:layout_editor_absoluteY="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:padding="16dp"
+    tools:context=".activities.PatientEnrollmentRecord">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Patient Enrollment Record"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/perLName"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="Enter Last Name"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textSize="14sp">
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp">
+
+                <EditText
+                    android:id="@+id/perSuffix"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:hint="Suffix"
+                    android:minHeight="48dp"
+                    android:textSize="14sp">
+                </EditText>
+
+                <EditText
+                    android:id="@+id/perAge"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:hint="Age"
+                    android:layout_marginLeft="5dp"
+                    android:minHeight="48dp"
+                    android:textSize="14sp">
+                </EditText>
+
+                <EditText
+                    android:id="@+id/perSex"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:hint="Sex"
+                    android:layout_marginLeft="5dp"
+                    android:minHeight="48dp"
+                    android:textSize="14sp">
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/perFName"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="Enter First Name"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textSize="14sp">
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp">
+
+                <EditText
+                    android:id="@+id/perBirthdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:hint="Birthdate"
+                    android:inputType = "date"
+                    android:minHeight="48dp"
+                    android:textSize="14sp">
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/perMName"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="Enter Middle Name"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textSize="14sp">
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp">
+
+                <EditText
+                    android:id="@+id/perBirthplace"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:hint="Birthplace"
+                    android:minHeight="48dp"
+                    android:textSize="14sp">
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/perCivilStatus"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:entries="@array/civilStatus"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save Data" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
