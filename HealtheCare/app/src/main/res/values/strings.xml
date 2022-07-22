@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">HealtheCare</string>
+    <string name="update">Update</string>
+
+    <string-array name="civilStatus">
+        <item>Single</item>
+        <item>Widow/er</item>
+        <item>Married</item>
+        <item>Separated</item>
+        <item>Annulled</item>
+        <item>Co-Habitation</item>
+    </string-array>
+    
+    
+</resources>
